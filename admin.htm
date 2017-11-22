@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="container teal borderYtoX"><a href="admin.htm">HOME</a><a href="showTeachers">TEACHERS</a><a href="showSections">SECTIONS</a><a>ABOUT</a><a>CONTACT</a></div>
+
+
+<div style="margin-top:150px">
+<div class="form-style-5" style="float:left; background:rgba(19, 40, 56, 0.92);  margin-left:200px">
+<form  method="get" action="createTeacher">
+<fieldset>
+<legend><span class="number">1</span> Teacher Info</legend>
+<input type="text" required  name="Name" placeholder="Teacher Name *">
+<input type="password" required name="Password" placeholder="Teacher Password *">
+<input type="email" required name="Email" placeholder="Enter Teachers Email *">
+<select required name="Department">
+  <option style = " color: #8E8E8E; font-style:italic ;" value="" disabled selected>Enter Teacher's Department *</option>
+  <option value="CSE">Computer Science and Engineering</option>
+  <option value="ECE">Electronics and Communication Engineering</option>
+  <option value="ME">Mechanical-Mechatronics Engineering</option>
+  <option value="Math">Mathematics</option>
+  <option value="Phy">Physics</option>
+  <option value="HSS">Humanities and Social Sciences</option>
+</select>
+<select required name="Designation">
+  <option style = "color : #8E8E8E; font-style:italic ;" value="" disabled selected>Enter Teacher's Designation *</option>
+  <option value="Professor">Professor</option>
+  <option value="Associate Professor">Associate Professor</option>
+  <option value="Assistant Professor">Assistant Professor</option>
+  <option value="Lecturer">Lecturer</option>
+</select>
+<input type="tel"  required name="ContactNo." placeholder="Enter Teacher's Contact Number *">
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Additional Info</legend>
+<textarea name="field3" placeholder="More About The Teacher Teaching Experience"></textarea>
+</fieldset>
+<input type="submit" value = "Add Teacher"/>
+</form>
+</div>
+
+
+<div class="form-style-5"  style="float:left; margin-left:130px; background :rgba(19, 40, 56, 0.92); margin-top: 160px ">
+<form method="get" action="createSection">
+<fieldset>
+<legend><span class="number">1</span> Section Info</legend>
+<input type="text" required name="name" placeholder="Section Name *">
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Additional Info</legend>
+<textarea name="field3" placeholder="More Inforamtion About Section *"></textarea>
+</fieldset>
+<input type="submit" value="Create Section"/>
+</form>
+</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
